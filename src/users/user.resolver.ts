@@ -3,6 +3,7 @@ import {
   CreateAccountInput,
   CreateAccountOutput,
 } from './dtos/create-account.dto';
+import { LoginInput, LoginOutput } from './dtos/login.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
 import { UserService } from './user.service';
@@ -21,5 +22,10 @@ export class UserResolver {
   @Query(returns => GetUserOutput)
   getUser(@Args('input') getUserInput: GetUserInput): Promise<GetUserOutput> {
     return this.userService.getUser(getUserInput);
+  }
+
+  @Mutation(returns => LoginOutput)
+  login(@Args('input') loginInput: LoginInput): Promise<LoginOutput> {
+    return this.userService.login(loginInput);
   }
 }

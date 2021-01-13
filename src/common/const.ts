@@ -1,1 +1,1 @@
-const HASH = 'l3gh22tZKOexZZ5dIG5z7Q==';
+export const PRIVATE_KEY = 'l3gh22tZKOexZZ5dIG5z7Q==';

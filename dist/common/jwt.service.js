@@ -6,20 +6,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UsersModule = void 0;
+exports.JwtService = void 0;
 const common_1 = require("@nestjs/common");
-const typeorm_1 = require("@nestjs/typeorm");
-const jwt_service_1 = require("../common/jwt.service");
-const user_entity_1 = require("./entities/user.entity");
-const user_resolver_1 = require("./user.resolver");
-const user_service_1 = require("./user.service");
-let UsersModule = class UsersModule {
+const jwt = require("jsonwebtoken");
+const user_entity_1 = require("../users/entities/user.entity");
+const const_1 = require("./const");
+let JwtService = class JwtService {
+    async getJwt(user) {
+        try {
+            const token = await jwt.sign(user, const_1.PRIVATE_KEY);
+            return token;
+        }
+        catch (error) {
+            console.log(error);
+            return new common_1.InternalServerErrorException();
+        }
+    }
 };
-UsersModule = __decorate([
-    common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forFeature([user_entity_1.User])],
-        providers: [user_resolver_1.UserResolver, user_service_1.UserService, jwt_service_1.JwtService],
-    })
-], UsersModule);
-exports.UsersModule = UsersModule;
-//# sourceMappingURL=user.module.js.map
+JwtService = __decorate([
+    common_1.Injectable()
+], JwtService);
+exports.JwtService = JwtService;
+//# sourceMappingURL=jwt.service.js.map
