@@ -3,7 +3,7 @@ import { CreateAccountInput, CreateAccountOutput } from './dtos/create-account.d
 import { LoginInput, LoginOutput } from './dtos/login.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
-import { JwtService } from 'src/common/jwt.service';
+import { JwtService } from 'src/jwt/jwt.service';
 export declare class UserService {
     private readonly users;
     private readonly jwtService;

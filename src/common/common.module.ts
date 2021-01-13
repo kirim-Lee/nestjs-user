@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
-import { JwtService } from './jwt.service';
 
 @Module({
-  providers: [JwtService],
+  providers: [],
 })
 export class CommonModule {}

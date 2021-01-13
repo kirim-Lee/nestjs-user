@@ -9,7 +9,7 @@ import { LoginInput, LoginOutput } from './dtos/login.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
-import { JwtService } from 'src/common/jwt.service';
+import { JwtService } from 'src/jwt/jwt.service';
 
 @Injectable()
 export class UserService {

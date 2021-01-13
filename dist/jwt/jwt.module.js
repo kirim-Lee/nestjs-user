@@ -5,15 +5,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var JwtModule_1;
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CommonModule = void 0;
+exports.JwtModule = void 0;
 const common_1 = require("@nestjs/common");
-let CommonModule = class CommonModule {
+const const_1 = require("../common/const");
+const jwt_service_1 = require("./jwt.service");
+let JwtModule = JwtModule_1 = class JwtModule {
+    static register(options) {
+        return {
+            module: JwtModule_1,
+            providers: [{ provide: const_1.CONFIG_OPTIONS, useValue: options }, jwt_service_1.JwtService],
+            exports: [jwt_service_1.JwtService],
+        };
+    }
 };
-CommonModule = __decorate([
-    common_1.Module({
-        providers: [],
-    })
-], CommonModule);
-exports.CommonModule = CommonModule;
-//# sourceMappingURL=common.module.js.map
+JwtModule = JwtModule_1 = __decorate([
+    common_1.Module({}),
+    common_1.Global()
+], JwtModule);
+exports.JwtModule = JwtModule;
+//# sourceMappingURL=jwt.module.js.map

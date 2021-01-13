@@ -9,9 +9,14 @@ import { Episode } from './podcast/entities/episode.entity';
 import { User } from './users/entities/user.entity';
 import { UsersModule } from './users/user.module';
 import { CommonModule } from './common/common.module';
+import { JwtModule } from './jwt/jwt.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      envFilePath: '.dev.env',
+    }),
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'db.sqlite3',
@@ -23,6 +28,7 @@ import { CommonModule } from './common/common.module';
     PodcastsModule,
     UsersModule,
     CommonModule,
+    JwtModule.register({ privateKey: process.env.PRIVATE_KEY }),
   ],
   controllers: [AppController],
   providers: [AppService],

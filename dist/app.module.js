@@ -18,11 +18,16 @@ const episode_entity_1 = require("./podcast/entities/episode.entity");
 const user_entity_1 = require("./users/entities/user.entity");
 const user_module_1 = require("./users/user.module");
 const common_module_1 = require("./common/common.module");
+const jwt_module_1 = require("./jwt/jwt.module");
+const config_1 = require("@nestjs/config");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
+            config_1.ConfigModule.forRoot({
+                envFilePath: '.dev.env',
+            }),
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'sqlite',
                 database: 'db.sqlite3',
@@ -34,6 +39,7 @@ AppModule = __decorate([
             podcasts_module_1.PodcastsModule,
             user_module_1.UsersModule,
             common_module_1.CommonModule,
+            jwt_module_1.JwtModule.register({ privateKey: process.env.PRIVATE_KEY }),
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

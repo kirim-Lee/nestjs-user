@@ -18,7 +18,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const user_entity_1 = require("./entities/user.entity");
 const bcrypt = require("bcrypt");
-const jwt_service_1 = require("../common/jwt.service");
+const jwt_service_1 = require("../jwt/jwt.service");
 let UserService = class UserService {
     constructor(users, jwtService) {
         this.users = users;
