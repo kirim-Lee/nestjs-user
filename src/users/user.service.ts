@@ -12,7 +12,11 @@ export class UserService {
     @InjectRepository(User) private readonly users: Repository<User>,
   ) {}
 
-  async createUser({ email, password }: CreateUserInput): Promise<CoreOutput> {
+  async createUser({
+    email,
+    password,
+    role,
+  }: CreateUserInput): Promise<CoreOutput> {
     try {
       const existUser = await this.users.findOne({ email });
 
@@ -20,7 +24,7 @@ export class UserService {
         return { ok: false, error: 'email is already exist' };
       }
 
-      await this.users.save(this.users.create({ email, password }));
+      await this.users.save(this.users.create({ email, password, role }));
 
       return { ok: true };
     } catch (error) {

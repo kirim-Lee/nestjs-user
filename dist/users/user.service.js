@@ -22,13 +22,13 @@ let UserService = class UserService {
     constructor(users) {
         this.users = users;
     }
-    async createUser({ email, password }) {
+    async createUser({ email, password, role, }) {
         try {
             const existUser = await this.users.findOne({ email });
             if (existUser) {
                 return { ok: false, error: 'email is already exist' };
             }
-            await this.users.save(this.users.create({ email, password }));
+            await this.users.save(this.users.create({ email, password, role }));
             return { ok: true };
         }
         catch (error) {

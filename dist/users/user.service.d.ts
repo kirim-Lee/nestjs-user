@@ -6,6 +6,6 @@ import { User } from './entities/user.entity';
 export declare class UserService {
     private readonly users;
     constructor(users: Repository<User>);
-    createUser({ email, password }: CreateUserInput): Promise<CoreOutput>;
+    createUser({ email, password, role, }: CreateUserInput): Promise<CoreOutput>;
     getUser({ id }: GetUserInput): Promise<GetUserOutput>;
 }

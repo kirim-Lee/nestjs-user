@@ -10,7 +10,7 @@ exports.CreateUserOuput = exports.CreateUserInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const output_dto_1 = require("../../common/dtos/output.dto");
 const user_entity_1 = require("../entities/user.entity");
-let CreateUserInput = class CreateUserInput extends graphql_1.PickType(user_entity_1.User, ['email', 'password'], graphql_1.InputType) {
+let CreateUserInput = class CreateUserInput extends graphql_1.PickType(user_entity_1.User, ['email', 'password', 'role'], graphql_1.InputType) {
 };
 CreateUserInput = __decorate([
     graphql_1.InputType()

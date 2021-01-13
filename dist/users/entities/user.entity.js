@@ -16,6 +16,12 @@ const core_entity_1 = require("../../common/entities/core.entity");
 const typeorm_1 = require("typeorm");
 const bcrypt = require("bcrypt");
 const common_1 = require("@nestjs/common");
+var Role;
+(function (Role) {
+    Role["Host"] = "Host";
+    Role["Listener"] = "Listener";
+})(Role || (Role = {}));
+graphql_1.registerEnumType(Role, { name: 'Role' });
 let User = class User extends core_entity_1.CoreEntity {
     async mutatePassword() {
         if (this.password) {
@@ -41,6 +47,12 @@ __decorate([
     class_validator_1.IsString(),
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
+__decorate([
+    typeorm_1.Column({ default: Role.Listener }),
+    graphql_1.Field(type => Role),
+    class_validator_1.IsEnum(Role),
+    __metadata("design:type", String)
+], User.prototype, "role", void 0);
 __decorate([
     typeorm_1.BeforeInsert(),
     typeorm_1.BeforeUpdate(),
