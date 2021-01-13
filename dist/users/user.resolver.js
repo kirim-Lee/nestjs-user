@@ -14,7 +14,10 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
+const roles_decorator_1 = require("../auth/roles.decorator");
+const user_decorator_1 = require("../auth/user.decorator");
 const create_account_dto_1 = require("./dtos/create-account.dto");
+const edit_account_dto_1 = require("./dtos/edit-account.dto");
 const login_dto_1 = require("./dtos/login.dto");
 const user_dto_1 = require("./dtos/user.dto");
 const user_entity_1 = require("./entities/user.entity");
@@ -31,6 +34,12 @@ let UserResolver = class UserResolver {
     }
     login(loginInput) {
         return this.userService.login(loginInput);
+    }
+    seeProfile(user) {
+        return user;
+    }
+    editProfile(user, editAccountInput) {
+        return this.userService.editProfile(user, editAccountInput);
     }
 };
 __decorate([
@@ -54,6 +63,24 @@ __decorate([
     __metadata("design:paramtypes", [login_dto_1.LoginInput]),
     __metadata("design:returntype", Promise)
 ], UserResolver.prototype, "login", null);
+__decorate([
+    graphql_1.Query(returns => user_entity_1.User),
+    roles_decorator_1.Roles('Any'),
+    __param(0, user_decorator_1.AuthUser()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_entity_1.User]),
+    __metadata("design:returntype", user_entity_1.User)
+], UserResolver.prototype, "seeProfile", null);
+__decorate([
+    graphql_1.Mutation(returns => edit_account_dto_1.EditAccountOutput),
+    roles_decorator_1.Roles('Any'),
+    __param(0, user_decorator_1.AuthUser()),
+    __param(1, graphql_1.Args('input')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_entity_1.User,
+        edit_account_dto_1.EditAccountInput]),
+    __metadata("design:returntype", Promise)
+], UserResolver.prototype, "editProfile", null);
 UserResolver = __decorate([
     graphql_1.Resolver(of => user_entity_1.User),
     __metadata("design:paramtypes", [user_service_1.UserService])

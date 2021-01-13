@@ -15,12 +15,12 @@ registerEnumType(Role, { name: 'Role' });
 @Entity()
 @ObjectType()
 export class User extends CoreEntity {
-  @Column()
+  @Column({ unique: true })
   @Field(type => String)
   @IsEmail()
   email: string;
 
-  @Column()
+  @Column({ select: false })
   @Field(type => String)
   @IsString()
   password: string;
@@ -34,6 +34,7 @@ export class User extends CoreEntity {
   @BeforeUpdate()
   async mutatePassword() {
     if (this.password) {
+      console.log('paswo?');
       try {
         this.password = await bcrypt.hash(this.password, 10);
       } catch (error) {

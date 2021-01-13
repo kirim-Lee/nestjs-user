@@ -5,6 +5,6 @@ Created with CodeSandbox
 - [x] password using bcrypt
 - [x] User role Host and Listener
 - [x] Login with Password
-- [ ] Create Guards private resolver
+- [x] Create Guards private resolver
 - [x] Use JWT as authentication method
-- [ ] Create a decorator user info
+- [x] Create a decorator user info
