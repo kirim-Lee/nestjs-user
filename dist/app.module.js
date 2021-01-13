@@ -38,7 +38,13 @@ AppModule = __decorate([
                 logging: true,
                 entities: [podcast_entity_1.Podcast, episode_entity_1.Episode, user_entity_1.User],
             }),
-            graphql_1.GraphQLModule.forRoot({ autoSchemaFile: true }),
+            graphql_1.GraphQLModule.forRoot({
+                autoSchemaFile: true,
+                context: ({ req }) => {
+                    var _a;
+                    return { token: (_a = req === null || req === void 0 ? void 0 : req.headers) === null || _a === void 0 ? void 0 : _a['x-jwt'] };
+                },
+            }),
             podcasts_module_1.PodcastsModule,
             user_module_1.UsersModule,
             common_module_1.CommonModule,

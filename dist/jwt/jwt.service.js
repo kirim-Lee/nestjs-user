@@ -32,6 +32,16 @@ let JwtService = class JwtService {
             return new common_1.InternalServerErrorException();
         }
     }
+    decodeJwt(token) {
+        try {
+            const user = jwt.verify(token, this.options.privateKey);
+            return user;
+        }
+        catch (error) {
+            console.log(error);
+            return new common_1.InternalServerErrorException();
+        }
+    }
 };
 JwtService = __decorate([
     common_1.Injectable(),

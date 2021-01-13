@@ -21,4 +21,14 @@ export class JwtService {
       return new InternalServerErrorException();
     }
   }
+
+  decodeJwt(token: string) {
+    try {
+      const user = jwt.verify(token, this.options.privateKey);
+      return user;
+    } catch (error) {
+      console.log(error);
+      return new InternalServerErrorException();
+    }
+  }
 }

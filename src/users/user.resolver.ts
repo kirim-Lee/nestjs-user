@@ -1,5 +1,4 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { Roles } from 'src/auth/roles.decorator';
 import {
   CreateAccountInput,
   CreateAccountOutput,
@@ -26,7 +25,6 @@ export class UserResolver {
   }
 
   @Mutation(returns => LoginOutput)
-  @Roles('Listener')
   login(@Args('input') loginInput: LoginInput): Promise<LoginOutput> {
     return this.userService.login(loginInput);
   }

@@ -23,6 +23,7 @@ const update_podcast_dto_1 = require("./dtos/update-podcast.dto");
 const episode_entity_1 = require("./entities/episode.entity");
 const create_episode_dto_1 = require("./dtos/create-episode.dto");
 const update_episode_dto_1 = require("./dtos/update-episode.dto");
+const roles_decorator_1 = require("../auth/roles.decorator");
 let PodcastsResolver = class PodcastsResolver {
     constructor(podcastsService) {
         this.podcastsService = podcastsService;
@@ -51,6 +52,7 @@ __decorate([
 ], PodcastsResolver.prototype, "getAllPodcasts", null);
 __decorate([
     graphql_1.Mutation(returns => create_podcast_dto_1.CreatePodcastOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_podcast_dto_1.CreatePodcastInput]),

@@ -14,7 +14,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
-const roles_decorator_1 = require("../auth/roles.decorator");
 const create_account_dto_1 = require("./dtos/create-account.dto");
 const login_dto_1 = require("./dtos/login.dto");
 const user_dto_1 = require("./dtos/user.dto");
@@ -50,7 +49,6 @@ __decorate([
 ], UserResolver.prototype, "getUser", null);
 __decorate([
     graphql_1.Mutation(returns => login_dto_1.LoginOutput),
-    roles_decorator_1.Roles('Listener'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [login_dto_1.LoginInput]),

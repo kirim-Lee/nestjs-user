@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { GraphQLModule } from '@nestjs/graphql';
+import { GqlModuleOptions, GraphQLModule } from '@nestjs/graphql';
 import { PodcastsModule } from './podcast/podcasts.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Podcast } from './podcast/entities/podcast.entity';
@@ -27,7 +27,12 @@ import { APP_GUARD } from '@nestjs/core';
       logging: true,
       entities: [Podcast, Episode, User],
     }),
-    GraphQLModule.forRoot({ autoSchemaFile: true }),
+    GraphQLModule.forRoot({
+      autoSchemaFile: true,
+      context: ({ req }) => {
+        return { token: req?.headers?.['x-jwt'] };
+      },
+    }),
     PodcastsModule,
     UsersModule,
     CommonModule,

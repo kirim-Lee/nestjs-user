@@ -4,4 +4,5 @@ export declare class JwtService {
     private options;
     constructor(options: JwtOptionInterface);
     getJwt(user: Pick<User, 'email' | 'role'>): Promise<any>;
+    decodeJwt(token: string): any;
 }
