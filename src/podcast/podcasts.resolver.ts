@@ -27,6 +27,7 @@ export class PodcastsResolver {
   constructor(private readonly podcastsService: PodcastsService) {}
 
   @Query(returns => GetAllPodcastsOutput)
+  @Roles('Any')
   getAllPodcasts(): Promise<GetAllPodcastsOutput> {
     return this.podcastsService.getAllPodcasts();
   }
@@ -40,6 +41,7 @@ export class PodcastsResolver {
   }
 
   @Query(returns => PodcastOutput)
+  @Roles('Any')
   getPodcast(
     @Args('input') podcastSearchInput: PodcastSearchInput,
   ): Promise<PodcastOutput> {
@@ -47,6 +49,7 @@ export class PodcastsResolver {
   }
 
   @Mutation(returns => CoreOutput)
+  @Roles('Host')
   deletePodcast(
     @Args('input') podcastSearchInput: PodcastSearchInput,
   ): Promise<CoreOutput> {
@@ -54,6 +57,7 @@ export class PodcastsResolver {
   }
 
   @Mutation(returns => CoreOutput)
+  @Roles('Host')
   updatePodcast(
     @Args('input') updatePodcastInput: UpdatePodcastInput,
   ): Promise<CoreOutput> {
@@ -66,6 +70,7 @@ export class EpisodeResolver {
   constructor(private readonly podcastService: PodcastsService) {}
 
   @Query(returns => EpisodesOutput)
+  @Roles('Any')
   getEpisodes(
     @Args('input') podcastSearchInput: PodcastSearchInput,
   ): Promise<EpisodesOutput> {
@@ -73,6 +78,7 @@ export class EpisodeResolver {
   }
 
   @Mutation(returns => CreateEpisodeOutput)
+  @Roles('Host')
   createEpisode(
     @Args('input') createEpisodeInput: CreateEpisodeInput,
   ): Promise<CreateEpisodeOutput> {
@@ -80,6 +86,7 @@ export class EpisodeResolver {
   }
 
   @Mutation(returns => CoreOutput)
+  @Roles('Host')
   updateEpisode(
     @Args('input') updateEpisodeInput: UpdateEpisodeInput,
   ): Promise<CoreOutput> {
@@ -87,6 +94,7 @@ export class EpisodeResolver {
   }
 
   @Mutation(returns => CoreOutput)
+  @Roles('Host')
   deleteEpisode(
     @Args('input') episodesSearchInput: EpisodesSearchInput,
   ): Promise<CoreOutput> {

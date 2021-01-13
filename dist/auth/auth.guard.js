@@ -13,16 +13,17 @@ exports.AuthGuard = void 0;
 const common_1 = require("@nestjs/common");
 const core_1 = require("@nestjs/core");
 const graphql_1 = require("@nestjs/graphql");
-const jwt_service_1 = require("../jwt/jwt.service");
+const auth_user_service_1 = require("./auth.user.service");
 let AuthGuard = class AuthGuard {
-    constructor(reflector, jwtService) {
+    constructor(reflector, authUserService) {
         this.reflector = reflector;
-        this.jwtService = jwtService;
+        this.authUserService = authUserService;
     }
-    canActivate(context) {
+    async canActivate(context) {
         const request = graphql_1.GqlExecutionContext.create(context).getContext();
+        console.log(request.token);
         if (request.token) {
-            const user = this.jwtService.decodeJwt(request.token);
+            const user = await this.authUserService.getUser(request.token);
             request['user'] = user;
         }
         const roles = this.reflector.get('roles', context.getHandler());
@@ -35,7 +36,8 @@ let AuthGuard = class AuthGuard {
 };
 AuthGuard = __decorate([
     common_1.Injectable(),
-    __metadata("design:paramtypes", [core_1.Reflector, jwt_service_1.JwtService])
+    __metadata("design:paramtypes", [core_1.Reflector,
+        auth_user_service_1.AuthUserService])
 ], AuthGuard);
 exports.AuthGuard = AuthGuard;
 //# sourceMappingURL=auth.guard.js.map

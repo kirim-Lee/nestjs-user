@@ -46,6 +46,7 @@ let PodcastsResolver = class PodcastsResolver {
 };
 __decorate([
     graphql_1.Query(returns => podcast_dto_1.GetAllPodcastsOutput),
+    roles_decorator_1.Roles('Any'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
@@ -60,6 +61,7 @@ __decorate([
 ], PodcastsResolver.prototype, "createPodcast", null);
 __decorate([
     graphql_1.Query(returns => podcast_dto_1.PodcastOutput),
+    roles_decorator_1.Roles('Any'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [podcast_dto_1.PodcastSearchInput]),
@@ -67,6 +69,7 @@ __decorate([
 ], PodcastsResolver.prototype, "getPodcast", null);
 __decorate([
     graphql_1.Mutation(returns => output_dto_1.CoreOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [podcast_dto_1.PodcastSearchInput]),
@@ -74,6 +77,7 @@ __decorate([
 ], PodcastsResolver.prototype, "deletePodcast", null);
 __decorate([
     graphql_1.Mutation(returns => output_dto_1.CoreOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [update_podcast_dto_1.UpdatePodcastInput]),
@@ -103,6 +107,7 @@ let EpisodeResolver = class EpisodeResolver {
 };
 __decorate([
     graphql_1.Query(returns => podcast_dto_1.EpisodesOutput),
+    roles_decorator_1.Roles('Any'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [podcast_dto_1.PodcastSearchInput]),
@@ -110,6 +115,7 @@ __decorate([
 ], EpisodeResolver.prototype, "getEpisodes", null);
 __decorate([
     graphql_1.Mutation(returns => create_episode_dto_1.CreateEpisodeOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_episode_dto_1.CreateEpisodeInput]),
@@ -117,6 +123,7 @@ __decorate([
 ], EpisodeResolver.prototype, "createEpisode", null);
 __decorate([
     graphql_1.Mutation(returns => output_dto_1.CoreOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [update_episode_dto_1.UpdateEpisodeInput]),
@@ -124,6 +131,7 @@ __decorate([
 ], EpisodeResolver.prototype, "updateEpisode", null);
 __decorate([
     graphql_1.Mutation(returns => output_dto_1.CoreOutput),
+    roles_decorator_1.Roles('Host'),
     __param(0, graphql_1.Args('input')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [podcast_dto_1.EpisodesSearchInput]),

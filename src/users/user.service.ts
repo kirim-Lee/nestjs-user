@@ -68,10 +68,7 @@ export class UserService {
         return { ok: false, error: 'password is not match' };
       }
 
-      const token = await this.jwtService.getJwt({
-        email: user.email,
-        role: user.role,
-      });
+      const token = this.jwtService.sign(user.id);
 
       return { ok: true, token };
     } catch (error) {

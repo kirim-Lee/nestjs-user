@@ -1181,16 +1181,6 @@
         "signature": "95b5a3078fdc51508d5d9cde59a1dd9525b53fd42dc12265a55261fd415d3274",
         "affectsGlobalScope": false
       },
-      "../src/app.service.ts": {
-        "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
-        "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2",
-        "affectsGlobalScope": false
-      },
-      "../src/app.controller.ts": {
-        "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
-        "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@nestjs/graphql/dist/decorators/args-type.decorator.d.ts": {
         "version": "7371aa9dfaadc42d481fc4b65d40cc6e0ca38d3da1632db9dcc558011b68557c",
         "signature": "7371aa9dfaadc42d481fc4b65d40cc6e0ca38d3da1632db9dcc558011b68557c",
@@ -5741,7 +5731,7 @@
         "affectsGlobalScope": false
       },
       "../src/podcast/podcasts.resolver.ts": {
-        "version": "12c7b6f44cf5dbedc80db1ed95f2d9f5035ec61abaf76f525854ca70c3d980d9",
+        "version": "052f8181b345a88bd5c9270e9035e252029d29a7a16ec0914bb98ad9f8a3b3f6",
         "signature": "1081b2a0db1ecf6dcffa81cde70fce3a6de618ecf49bebdf06cae12b1f0a9ada",
         "affectsGlobalScope": false
       },
@@ -5776,12 +5766,12 @@
         "affectsGlobalScope": false
       },
       "../src/jwt/jwt.service.ts": {
-        "version": "6106aced83dcc03fbe4d8186dd49ffcce4c8b48f0ae708f487429aeb5d17e97d",
-        "signature": "154cbd5df074657ab6bd553c729145e0d5c5d8224daa01746ab5dbbcd4fd5831",
+        "version": "c1d46b62093d077f821a460c287a9e3e2d2893ca241a5f1499a12dc992744836",
+        "signature": "a3b9c4d064f341b69a4a21e8031a6033732f7d80a82e876bbcb14f6784254ed4",
         "affectsGlobalScope": false
       },
       "../src/users/user.service.ts": {
-        "version": "f36d336ea9e4314bce2c783f73ce2728cf6e0605188cb4f9c309d1b86a7b9427",
+        "version": "ef30b0215018a9b33de9017a7311636c4fe9dbda760f3bfbc9b7339f7bb96234",
         "signature": "7971bfd54ba8cae003e54e849ecafeb8c42a1edc1345ee577cd7070c48734e87",
         "affectsGlobalScope": false
       },
@@ -5791,7 +5781,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/user.module.ts": {
-        "version": "e332bd7ec55207f604bd3d105f4ee175c6c22b400ed2b8d971bcbaf56c39d942",
+        "version": "698723d161b8bcf3bd6a0860ac575b2e7c471bae10b9d088d984817b624f663a",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -5865,18 +5855,23 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/auth/auth.module.ts": {
-        "version": "da2b8b8660542a34ee4e2d234d69b83fa7e8143d62392ba8bffa94561e7d7b98",
-        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
+      "../src/auth/auth.user.service.ts": {
+        "version": "c501ee7a416726a76d20f2f66369b7fa2268e39750bb6d305c8bceb9bf8297ee",
+        "signature": "347dc5adb7b8bce8aa1d7faddc32333aeeb80a8ec08c3e612d14ed920b6daafd",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.guard.ts": {
-        "version": "f2df5e8f8ed04f7f1189157d5751da12991f510fcf8af054a8d21b75b3c23bfa",
-        "signature": "34c6ca797d5db4f6164cc6fea9b3592db2b0ec8ce5ef35e7676182ad9e5fbbe6",
+        "version": "c02c2679dbe1ff7393ded64ab1710e962ed56dc048ffad4feff5513cd2d9717e",
+        "signature": "e801de1a79bd3f49f174ccd6a9982f879b245c039ded95bf66623227da9f8bce",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.module.ts": {
+        "version": "16457add4aba0043d38e02bbd912ef3058895fc3640d8e52a3238d0430152393",
+        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "7fc683493325912b7be49ba27a5d418dc84f5c3ed1e8031c50985e6dfa8125e9",
+        "version": "d0ad18eebea232f41e72537c519b465a870e8910e8483d21e88711d567536459",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -10934,19 +10929,11 @@
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts": [
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/app.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/app.service.ts"
-      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/config/index.d.ts",
-        "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/app.controller.ts",
-        "../src/app.service.ts",
-        "../src/auth/auth.guard.ts",
         "../src/auth/auth.module.ts",
         "../src/common/common.module.ts",
         "../src/jwt/jwt.module.ts",
@@ -10956,18 +10943,25 @@
         "../src/users/entities/user.entity.ts",
         "../src/users/user.module.ts"
       ],
-      "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
-      ],
       "../src/auth/auth.guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/graphql/index.d.ts",
-        "../src/auth/roles.decorator.ts",
-        "../src/jwt/jwt.service.ts"
+        "../src/auth/auth.user.service.ts",
+        "../src/auth/roles.decorator.ts"
       ],
       "../src/auth/auth.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../src/auth/auth.guard.ts",
+        "../src/auth/auth.user.service.ts",
+        "../src/users/user.module.ts"
+      ],
+      "../src/auth/auth.user.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/jwt/jwt.service.ts",
+        "../src/users/entities/user.entity.ts",
+        "../src/users/user.service.ts"
       ],
       "../src/auth/roles.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10998,7 +10992,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/common/const.ts",
         "../src/jwt/jwt.interface.ts",
-        "../src/users/entities/user.entity.ts"
+        "../src/users/user.service.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15894,13 +15888,15 @@
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts": [
         "../node_modules/zen-observable-ts/lib/types.d.ts"
       ],
-      "../src/app.controller.ts": [
-        "../src/app.service.ts"
-      ],
       "../src/auth/auth.guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
-        "../src/jwt/jwt.service.ts"
+        "../src/auth/auth.user.service.ts"
+      ],
+      "../src/auth/auth.user.service.ts": [
+        "../src/jwt/jwt.service.ts",
+        "../src/users/entities/user.entity.ts",
+        "../src/users/user.service.ts"
       ],
       "../src/auth/roles.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15914,8 +15910,7 @@
         "../src/jwt/jwt.interface.ts"
       ],
       "../src/jwt/jwt.service.ts": [
-        "../src/jwt/jwt.interface.ts",
-        "../src/users/entities/user.entity.ts"
+        "../src/jwt/jwt.interface.ts"
       ],
       "../src/podcast/dtos/create-episode.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -17200,11 +17195,10 @@
       "../node_modules/zen-observable-ts/lib/index.d.ts",
       "../node_modules/zen-observable-ts/lib/types.d.ts",
       "../node_modules/zen-observable-ts/lib/zenobservable.d.ts",
-      "../src/app.controller.ts",
       "../src/app.module.ts",
-      "../src/app.service.ts",
       "../src/auth/auth.guard.ts",
       "../src/auth/auth.module.ts",
+      "../src/auth/auth.user.service.ts",
       "../src/auth/roles.decorator.ts",
       "../src/auth/user.decorator.ts",
       "../src/common/common.module.ts",

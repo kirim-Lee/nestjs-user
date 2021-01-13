@@ -16,31 +16,17 @@ exports.JwtService = void 0;
 const common_1 = require("@nestjs/common");
 const jwt = require("jsonwebtoken");
 const const_1 = require("../common/const");
-const user_entity_1 = require("../users/entities/user.entity");
+const user_service_1 = require("../users/user.service");
 const jwt_interface_1 = require("./jwt.interface");
 let JwtService = class JwtService {
     constructor(options) {
         this.options = options;
     }
-    async getJwt(user) {
-        try {
-            const token = await jwt.sign(user, this.options.privateKey);
-            return token;
-        }
-        catch (error) {
-            console.log(error);
-            return new common_1.InternalServerErrorException();
-        }
+    sign(id) {
+        return jwt.sign({ id }, this.options.privateKey);
     }
     decodeJwt(token) {
-        try {
-            const user = jwt.verify(token, this.options.privateKey);
-            return user;
-        }
-        catch (error) {
-            console.log(error);
-            return new common_1.InternalServerErrorException();
-        }
+        return jwt.verify(token, this.options.privateKey);
     }
 };
 JwtService = __decorate([
