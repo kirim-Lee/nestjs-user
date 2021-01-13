@@ -5745,9 +5745,9 @@
         "signature": "c4840b1f6e5564e78d992a8bed4a4090272bcb52c908021fa61bba62d902fdd2",
         "affectsGlobalScope": false
       },
-      "../src/users/dtos/create-user.dto.ts": {
-        "version": "814e212326a0d6bebfc505092199262ebb6091b7f122005615410ae982ae3805",
-        "signature": "3df64a78699ca1c87fe42af657bc009490a2b906e70481d93f7e4839c29b707b",
+      "../src/users/dtos/create-account.dto.ts": {
+        "version": "f48eee788a5710c23a7b5628fa8a470cb4fe47544a7c1b62c235175792e9c1af",
+        "signature": "060f0eaa54b6e80ba3b2d447006d6af8663407ddd0d77bebae8e7e2509aec31c",
         "affectsGlobalScope": false
       },
       "../src/users/dtos/user.dto.ts": {
@@ -5756,13 +5756,13 @@
         "affectsGlobalScope": false
       },
       "../src/users/user.service.ts": {
-        "version": "72f400e664f6eaa8cbbd1ae5a7fcfe0d71ac45eb27eaadc693f0c860491aa67b",
-        "signature": "31c7be146b6a674167a2961466398b22e8d482c3d382cbf3721b0e80bb30b021",
+        "version": "be490d169f251c43b462865afedb681e4f9aa12ae680d04fd1bdb6aea1d21486",
+        "signature": "dc9d5ff49a2816b54ef2644153dae10ed505a38e488b4024f39394270cea54c0",
         "affectsGlobalScope": false
       },
       "../src/users/user.resolver.ts": {
-        "version": "526a49d7504ebc7064942cfe2ad09bf30208172c3f7a35a85dc651602c2b0db2",
-        "signature": "58c06cead8d9790f907af5e8864bb9f6c041f7e13fb3c4d7d63915cdbeb4a36f",
+        "version": "1c13504cfa2a327a24ab2b3e20ec046f80317cfb391be30adf07bf99a15293e9",
+        "signature": "a67ee2e855cad1e137fd5906b12ee756cdd0eca667e08504957050eb74479575",
         "affectsGlobalScope": false
       },
       "../src/users/user.module.ts": {
@@ -10911,7 +10911,7 @@
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
-      "../src/users/dtos/create-user.dto.ts": [
+      "../src/users/dtos/create-account.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../src/common/dtos/output.dto.ts",
         "../src/users/entities/user.entity.ts"
@@ -10937,7 +10937,7 @@
       ],
       "../src/users/user.resolver.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
-        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/user.dto.ts",
         "../src/users/entities/user.entity.ts",
         "../src/users/user.service.ts"
@@ -10946,8 +10946,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/common/dtos/output.dto.ts",
-        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/user.dto.ts",
         "../src/users/entities/user.entity.ts"
       ]
@@ -15739,7 +15738,7 @@
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
-      "../src/users/dtos/create-user.dto.ts": [
+      "../src/users/dtos/create-account.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/common/dtos/output.dto.ts",
         "../src/users/entities/user.entity.ts"
@@ -15753,14 +15752,13 @@
         "../src/common/entities/core.entity.ts"
       ],
       "../src/users/user.resolver.ts": [
-        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/user.dto.ts",
         "../src/users/user.service.ts"
       ],
       "../src/users/user.service.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/common/dtos/output.dto.ts",
-        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/create-account.dto.ts",
         "../src/users/dtos/user.dto.ts",
         "../src/users/entities/user.entity.ts"
       ]
@@ -16970,7 +16968,7 @@
       "../src/podcast/podcasts.module.ts",
       "../src/podcast/podcasts.resolver.ts",
       "../src/podcast/podcasts.service.ts",
-      "../src/users/dtos/create-user.dto.ts",
+      "../src/users/dtos/create-account.dto.ts",
       "../src/users/dtos/user.dto.ts",
       "../src/users/entities/user.entity.ts",
       "../src/users/user.module.ts",

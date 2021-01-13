@@ -1,9 +1,9 @@
-import { CreateUserInput, CreateUserOuput } from './dtos/create-user.dto';
+import { CreateAccountInput, CreateAccountOutput } from './dtos/create-account.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { UserService } from './user.service';
 export declare class UserResolver {
     private readonly userService;
     constructor(userService: UserService);
-    createUser(createUserInput: CreateUserInput): Promise<CreateUserOuput>;
+    createUser(createAccountInput: CreateAccountInput): Promise<CreateAccountOutput>;
     getUser(getUserInput: GetUserInput): Promise<GetUserOutput>;
 }

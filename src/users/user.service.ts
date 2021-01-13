@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CoreOutput } from 'src/common/dtos/output.dto';
 import { Repository } from 'typeorm';
-import { CreateUserInput } from './dtos/create-user.dto';
+import {
+  CreateAccountInput,
+  CreateAccountOutput,
+} from './dtos/create-account.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
 
@@ -16,7 +18,7 @@ export class UserService {
     email,
     password,
     role,
-  }: CreateUserInput): Promise<CoreOutput> {
+  }: CreateAccountInput): Promise<CreateAccountOutput> {
     try {
       const existUser = await this.users.findOne({ email });
 
