@@ -20,6 +20,9 @@ const user_module_1 = require("./users/user.module");
 const common_module_1 = require("./common/common.module");
 const jwt_module_1 = require("./jwt/jwt.module");
 const config_1 = require("@nestjs/config");
+const auth_module_1 = require("./auth/auth.module");
+const auth_guard_1 = require("./auth/auth.guard");
+const core_1 = require("@nestjs/core");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -40,9 +43,10 @@ AppModule = __decorate([
             user_module_1.UsersModule,
             common_module_1.CommonModule,
             jwt_module_1.JwtModule.register({ privateKey: process.env.PRIVATE_KEY }),
+            auth_module_1.AuthModule,
         ],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService, { provide: core_1.APP_GUARD, useClass: auth_guard_1.AuthGuard }],
     })
 ], AppModule);
 exports.AppModule = AppModule;

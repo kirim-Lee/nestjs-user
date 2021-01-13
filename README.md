@@ -6,5 +6,5 @@ Created with CodeSandbox
 - [x] User role Host and Listener
 - [x] Login with Password
 - [ ] Create Guards private resolver
-- [ ] Use JWT as authentication method
+- [x] Use JWT as authentication method
 - [ ] Create a decorator user info

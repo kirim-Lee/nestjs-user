@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = void 0;
+exports.User = exports.Role = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
 const core_entity_1 = require("../../common/entities/core.entity");
@@ -20,7 +20,7 @@ var Role;
 (function (Role) {
     Role["Host"] = "Host";
     Role["Listener"] = "Listener";
-})(Role || (Role = {}));
+})(Role = exports.Role || (exports.Role = {}));
 graphql_1.registerEnumType(Role, { name: 'Role' });
 let User = class User extends core_entity_1.CoreEntity {
     async mutatePassword() {

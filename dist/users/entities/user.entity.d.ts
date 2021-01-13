@@ -1,5 +1,5 @@
 import { CoreEntity } from 'src/common/entities/core.entity';
-declare enum Role {
+export declare enum Role {
     Host = "Host",
     Listener = "Listener"
 }
@@ -9,4 +9,3 @@ export declare class User extends CoreEntity {
     role: Role;
     mutatePassword(): Promise<void>;
 }
-export {};
