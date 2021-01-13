@@ -4,6 +4,7 @@ import { LoginInput, LoginOutput } from './dtos/login.dto';
 import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
 import { JwtService } from 'src/jwt/jwt.service';
+import { EditAccountInput, EditAccountOutput } from './dtos/edit-account.dto';
 export declare class UserService {
     private readonly users;
     private readonly jwtService;
@@ -11,4 +12,5 @@ export declare class UserService {
     createUser({ email, password, role, }: CreateAccountInput): Promise<CreateAccountOutput>;
     getUser({ id }: GetUserInput): Promise<GetUserOutput>;
     login({ email, password }: LoginInput): Promise<LoginOutput>;
+    editProfile({ id }: User, editAccountInput: EditAccountInput): Promise<EditAccountOutput>;
 }

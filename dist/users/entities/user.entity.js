@@ -25,6 +25,7 @@ graphql_1.registerEnumType(Role, { name: 'Role' });
 let User = class User extends core_entity_1.CoreEntity {
     async mutatePassword() {
         if (this.password) {
+            console.log('paswo?');
             try {
                 this.password = await bcrypt.hash(this.password, 10);
             }
@@ -36,13 +37,13 @@ let User = class User extends core_entity_1.CoreEntity {
     }
 };
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ unique: true }),
     graphql_1.Field(type => String),
     class_validator_1.IsEmail(),
     __metadata("design:type", String)
 ], User.prototype, "email", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ select: false }),
     graphql_1.Field(type => String),
     class_validator_1.IsString(),
     __metadata("design:type", String)

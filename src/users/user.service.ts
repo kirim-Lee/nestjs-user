@@ -10,6 +10,7 @@ import { GetUserInput, GetUserOutput } from './dtos/user.dto';
 import { User } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from 'src/jwt/jwt.service';
+import { EditAccountInput, EditAccountOutput } from './dtos/edit-account.dto';
 
 @Injectable()
 export class UserService {
@@ -56,7 +57,10 @@ export class UserService {
 
   async login({ email, password }: LoginInput): Promise<LoginOutput> {
     try {
-      const user = await this.users.findOne({ email });
+      const user = await this.users.findOne(
+        { email },
+        { select: ['id', 'email', 'password'] },
+      );
 
       if (!user) {
         return { ok: false, error: 'user is not exist' };
@@ -71,6 +75,38 @@ export class UserService {
       const token = this.jwtService.sign(user.id);
 
       return { ok: true, token };
+    } catch (error) {
+      return { ok: false, error: error.message };
+    }
+  }
+
+  async editProfile(
+    { id }: User,
+    editAccountInput: EditAccountInput,
+  ): Promise<EditAccountOutput> {
+    try {
+      const user = await this.users.findOne(id);
+
+      if (!user) {
+        return { ok: false, error: 'your info is not exist' };
+      }
+
+      if (editAccountInput.email) {
+        const existEmailUser = await this.users.findOne({
+          email: editAccountInput.email,
+        });
+        if (existEmailUser) {
+          return { ok: false, error: 'choosen email is accupied' };
+        }
+      }
+
+      Object.keys(editAccountInput).forEach(key => {
+        user[key] = editAccountInput[key];
+      });
+
+      await this.users.save(user);
+
+      return { ok: true };
     } catch (error) {
       return { ok: false, error: error.message };
     }
