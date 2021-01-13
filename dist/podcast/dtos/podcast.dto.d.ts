@@ -1,4 +1,4 @@
-import { CoreOutput } from './output.dto';
+import { CoreOutput } from '../../common/dtos/output.dto';
 import { Podcast } from '../entities/podcast.entity';
 import { Episode } from '../entities/episode.entity';
 export declare class GetAllPodcastsOutput extends CoreOutput {

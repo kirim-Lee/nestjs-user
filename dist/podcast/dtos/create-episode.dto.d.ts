@@ -1,5 +1,5 @@
 import { Episode } from '../entities/episode.entity';
-import { CoreOutput } from './output.dto';
+import { CoreOutput } from '../../common/dtos/output.dto';
 declare const CreateEpisodeInput_base: import("@nestjs/common").Type<Pick<Episode, "title" | "category">>;
 export declare class CreateEpisodeInput extends CreateEpisodeInput_base {
     podcastId: number;

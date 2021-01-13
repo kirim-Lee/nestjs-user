@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Episode = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
+const core_entity_1 = require("../../common/entities/core.entity");
 const typeorm_1 = require("typeorm");
-const core_entity_1 = require("./core.entity");
 const podcast_entity_1 = require("./podcast.entity");
 let Episode = class Episode extends core_entity_1.CoreEntity {
 };

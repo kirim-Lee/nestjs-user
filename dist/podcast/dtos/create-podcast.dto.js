@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreatePodcastOutput = exports.CreatePodcastInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const podcast_entity_1 = require("../entities/podcast.entity");
-const output_dto_1 = require("./output.dto");
-let CreatePodcastInput = class CreatePodcastInput extends graphql_1.PickType(podcast_entity_1.Podcast, ['title', 'category'], graphql_1.InputType) {
+const output_dto_1 = require("../../common/dtos/output.dto");
+let CreatePodcastInput = class CreatePodcastInput extends graphql_1.PickType(podcast_entity_1.Podcast, ['title', 'category', 'rating'], graphql_1.InputType) {
 };
 CreatePodcastInput = __decorate([
     graphql_1.InputType()

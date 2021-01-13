@@ -6,7 +6,8 @@ import { PodcastsModule } from './podcast/podcasts.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Podcast } from './podcast/entities/podcast.entity';
 import { Episode } from './podcast/entities/episode.entity';
-import { UsersModule } from './users/users.module';
+import { User } from './users/entities/user.entity';
+import { UsersModule } from './users/user.module';
 import { CommonModule } from './common/common.module';
 
 @Module({
@@ -16,7 +17,7 @@ import { CommonModule } from './common/common.module';
       database: 'db.sqlite3',
       synchronize: true,
       logging: true,
-      entities: [Podcast, Episode],
+      entities: [Podcast, Episode, User],
     }),
     GraphQLModule.forRoot({ autoSchemaFile: true }),
     PodcastsModule,

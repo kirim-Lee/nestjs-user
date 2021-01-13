@@ -5635,39 +5635,39 @@
         "signature": "65916fb178938c9fb2c0588cf5447f5b5de992d50d0e308d6b2169a027fa9dd5",
         "affectsGlobalScope": false
       },
-      "../src/podcast/entities/core.entity.ts": {
+      "../src/common/entities/core.entity.ts": {
         "version": "69d04064fd8618546b319108588de45f67e3278b66423c5e43414733f5043ad5",
         "signature": "330a671c81525c627aa660f3f2e1a51cb4aabc4faeb3209dca0b830aea762d35",
         "affectsGlobalScope": false
       },
       "../src/podcast/entities/podcast.entity.ts": {
-        "version": "5342034e23e6b666855c5cc7ee4d565284b7723c0c333bc072c180eab7f6b45c",
-        "signature": "12c4f389d6e88a5122f76e984c0e7a4731b0a88605848c26611d100329d0c547",
+        "version": "04c9a829bfb25743846de5c04d8d86d6303a7dcc199af4a1ce9a2241e5d9aedb",
+        "signature": "af188fd409784d41546c4bf1f5a3b1102046969db49af7c9922a0290f291cc84",
         "affectsGlobalScope": false
       },
       "../src/podcast/entities/episode.entity.ts": {
-        "version": "aa4559d8075e69904fd06ea9e41105046c8b58603410b62cbcafefe2ceae9c24",
-        "signature": "de59cb4d1998c2f18900b8893ee4c775d2513f4d34832f3bd7151489e34d506e",
+        "version": "2908646ae484dcd75adc1c487ad9a5fb0a71ec09b7bb3cac39c9d0c662f9c906",
+        "signature": "7aaef5926ef973bd9d0ad50b9a19e2a11230333b9d4648369a1cd9480f90cc05",
         "affectsGlobalScope": false
       },
-      "../src/podcast/dtos/output.dto.ts": {
+      "../src/common/dtos/output.dto.ts": {
         "version": "bd38b96f81a8b6cff28682d0e9f70e3c5b9f0d51dd53d3c1afd3f71cb1214154",
         "signature": "83b62ec1a108b77c82bbf7b83813c6582be6819aabd8de9b821563f7d91e3fbb",
         "affectsGlobalScope": false
       },
       "../src/podcast/dtos/create-episode.dto.ts": {
-        "version": "db0e7357f57e531d731658311f626b4fd18ac62f6f7bfc58c129029357131812",
-        "signature": "476211e1caa5bb2249a4acd2e8e7a18edb08d7fbead65caced72de4a4ef0bb18",
+        "version": "2c3aa911935c634746142577ccad21fd39aa3a2df89e60892b446e89b25211aa",
+        "signature": "7928b1729f5eedc6b72cf67777bb2156b2f6f6eb7eaebd5be9f452461e78fd2d",
         "affectsGlobalScope": false
       },
       "../src/podcast/dtos/create-podcast.dto.ts": {
-        "version": "cb000d1be68b7baecb4524b260426444380d49391a2246817d86ffd306573880",
-        "signature": "924ed31b365bd80c77e5d7c155753804a305051a9478ab51c5251cc3e38d74e4",
+        "version": "872312ba0bb557404c4a405450198209e34d0a6a4cae862db9ee689ea70c57a6",
+        "signature": "84a4b94a445b941843fab69c83d2b4b570c2881029f7c693a02b65df49a8c3f9",
         "affectsGlobalScope": false
       },
       "../src/podcast/dtos/podcast.dto.ts": {
-        "version": "f90bbf0797c5e259a619779661c7dd4068d729c93778af435ac031c188182a02",
-        "signature": "68b785ee2135009a8501d48dc62a1e57c50a06e477b2aee80456b35818ef4d6b",
+        "version": "b87cf0d272a035f3d2d3fc2e525ad1254aac790c0e85974515a45b1d8eea52eb",
+        "signature": "a5be88babbd44c968b8b2ccfed347f8496fb687544f35d9ebc917c38bdc05aec",
         "affectsGlobalScope": false
       },
       "../src/podcast/dtos/update-episode.dto.ts": {
@@ -5677,7 +5677,7 @@
       },
       "../src/podcast/dtos/update-podcast.dto.ts": {
         "version": "1f41f36db4a01e27a3216fcd99b615339876a83d5a8e04652ce0dcb4989dc2b1",
-        "signature": "45e230df4acd4ec5a92119053b37219418a7e07e50cc4190c010648ca561cb6d",
+        "signature": "a508df44d0a887226957c0fbc983e356223d147d1a11b43515a184f97cc6aaaa",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
@@ -5726,13 +5726,13 @@
         "affectsGlobalScope": false
       },
       "../src/podcast/podcasts.service.ts": {
-        "version": "9649bfa9c5910e359cca8523b79e2a0d7b1d2a5235ffb5f9dcdc758922fe0db5",
-        "signature": "ea96268acc37bf6a116940a6b00fca381dde444c5de0019113b6b1f0de784c95",
+        "version": "e7d8b8de9549c8834df77dc71fa04bf4e0840fdd2768394318a5cfe4b0f9174e",
+        "signature": "39a175f6514fc38f0a64e79e8c81e72334bc6f35f4aed81abeb4dd2555c044dd",
         "affectsGlobalScope": false
       },
       "../src/podcast/podcasts.resolver.ts": {
-        "version": "ca33068278c85da47dcf327f5725263e439ed3142834130b6a48ef92b7256900",
-        "signature": "80af6029215459466eddd1ac22ad635aa4cff70bf31f71cc3f7f704a7633694f",
+        "version": "6b0237e584548e782b05cff0bd122880f5cddd0ce92296518fe35ea4cc386c50",
+        "signature": "1081b2a0db1ecf6dcffa81cde70fce3a6de618ecf49bebdf06cae12b1f0a9ada",
         "affectsGlobalScope": false
       },
       "../src/podcast/podcasts.module.ts": {
@@ -5740,15 +5740,55 @@
         "signature": "ace270d18bdb58084a10e2dfcca7326d056db7275292c2c0bc25304614facb07",
         "affectsGlobalScope": false
       },
+      "../src/users/entities/user.entity.ts": {
+        "version": "49cdbc60eb3c51c4c950761cdf06be6245f590606c4fc4fafa70e10897d0f147",
+        "signature": "28ad14ba948041b9e77fe9314007e1dbc7b546310516920c88d735218c7d3e3a",
+        "affectsGlobalScope": false
+      },
+      "../src/users/dtos/create-user.dto.ts": {
+        "version": "52327d00e3c1938477b8976c9971e9b91015f16eea10eac55f619491070ed3d0",
+        "signature": "5ad7a7bde84ea8da1050a4ac4e6c211400dce6d01385b9f37cf29b36c415e555",
+        "affectsGlobalScope": false
+      },
+      "../src/users/dtos/user.dto.ts": {
+        "version": "e26d01ba7e1fc3dd4618f3247e188ac4d924df291ccab22c9a26eb0bb8559c4d",
+        "signature": "ffde75c5a2eedf67264018927a39479494f43eb4c41742f4a1f27ecce214e0c2",
+        "affectsGlobalScope": false
+      },
+      "../src/users/user.service.ts": {
+        "version": "86548a358f80b9d71f0564b0f6ce545ee71a5435b29ebf36ab66e08f30c9e81f",
+        "signature": "98982d4b70b2cc9f078a1645e1756e0048bf729059652656a3ec090d785af0df",
+        "affectsGlobalScope": false
+      },
+      "../src/users/user.resolver.ts": {
+        "version": "526a49d7504ebc7064942cfe2ad09bf30208172c3f7a35a85dc651602c2b0db2",
+        "signature": "58c06cead8d9790f907af5e8864bb9f6c041f7e13fb3c4d7d63915cdbeb4a36f",
+        "affectsGlobalScope": false
+      },
+      "../src/users/user.module.ts": {
+        "version": "e332bd7ec55207f604bd3d105f4ee175c6c22b400ed2b8d971bcbaf56c39d942",
+        "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
+        "affectsGlobalScope": false
+      },
+      "../src/common/common.module.ts": {
+        "version": "cbc3a605c697a595bfa4e6cd27096a68fb848317ae05f8fc4dbec4c77841a011",
+        "signature": "7214164cfa10573d2bf79da5174719e21aa58d3745730ba5464fd4491e9d5c6c",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "17ece9669f653a87f1b62b4387085a14a301cb6d4c6dd181a1ff07ab702cfe8c",
+        "version": "5227c3a5f7fc7a4d7e0e3eb2ae0e06499a8bf09b6e4df9c5419746e897ffbf88",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "859f9f6fd9741f2d7917f9f8cafe819ad6a15b417d1e13586b67d673bbc29f67",
+        "version": "052567c5c58d7cc8727131aec4240e2318e21251e8ddb151fefda8a21e28b231",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
+      },
+      "../src/common/const.ts": {
+        "version": "48c81b2696742fd85e618d9c55fdfe342f7c94afe927554b60500e26d24a636b",
+        "signature": "3d1bc700da5968dfed36e64b12752b6cf618cbe31a584a4f658878f67f6b25c1",
+        "affectsGlobalScope": true
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -10771,12 +10811,26 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
+        "../src/common/common.module.ts",
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts",
-        "../src/podcast/podcasts.module.ts"
+        "../src/podcast/podcasts.module.ts",
+        "../src/users/entities/user.entity.ts",
+        "../src/users/user.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/common/common.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/common/dtos/output.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
+      "../src/common/entities/core.entity.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/typeorm/index.d.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -10786,22 +10840,18 @@
       "../src/podcast/dtos/create-episode.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/episode.entity.ts"
       ],
       "../src/podcast/dtos/create-podcast.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/podcast.entity.ts"
-      ],
-      "../src/podcast/dtos/output.dto.ts": [
-        "../node_modules/@nestjs/graphql/index.d.ts",
-        "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/podcast/dtos/podcast.dto.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
@@ -10814,22 +10864,18 @@
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
-      "../src/podcast/entities/core.entity.ts": [
-        "../node_modules/@nestjs/graphql/index.d.ts",
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../src/podcast/entities/episode.entity.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/podcast/entities/core.entity.ts",
+        "../src/common/entities/core.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
       "../src/podcast/entities/podcast.entity.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/podcast/entities/core.entity.ts",
+        "../src/common/entities/core.entity.ts",
         "../src/podcast/entities/episode.entity.ts"
       ],
       "../src/podcast/podcasts.module.ts": [
@@ -10842,9 +10888,9 @@
       ],
       "../src/podcast/podcasts.resolver.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/dtos/create-episode.dto.ts",
         "../src/podcast/dtos/create-podcast.dto.ts",
-        "../src/podcast/dtos/output.dto.ts",
         "../src/podcast/dtos/podcast.dto.ts",
         "../src/podcast/dtos/update-episode.dto.ts",
         "../src/podcast/dtos/update-podcast.dto.ts",
@@ -10856,14 +10902,54 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/dtos/create-episode.dto.ts",
         "../src/podcast/dtos/create-podcast.dto.ts",
-        "../src/podcast/dtos/output.dto.ts",
         "../src/podcast/dtos/podcast.dto.ts",
         "../src/podcast/dtos/update-episode.dto.ts",
         "../src/podcast/dtos/update-podcast.dto.ts",
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
+      ],
+      "../src/users/dtos/create-user.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
+      "../src/users/dtos/user.dto.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
+      "../src/users/entities/user.entity.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/entities/core.entity.ts"
+      ],
+      "../src/users/user.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/users/entities/user.entity.ts",
+        "../src/users/user.resolver.ts",
+        "../src/users/user.service.ts"
+      ],
+      "../src/users/user.resolver.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/user.dto.ts",
+        "../src/users/entities/user.entity.ts",
+        "../src/users/user.service.ts"
+      ],
+      "../src/users/user.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/user.dto.ts",
+        "../src/users/entities/user.entity.ts"
       ]
     },
     "exportedModulesMap": {
@@ -15604,17 +15690,17 @@
       ],
       "../src/podcast/dtos/create-episode.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/episode.entity.ts"
       ],
       "../src/podcast/dtos/create-podcast.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
       "../src/podcast/dtos/podcast.dto.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/podcast/dtos/output.dto.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
@@ -15626,17 +15712,17 @@
         "../src/podcast/entities/podcast.entity.ts"
       ],
       "../src/podcast/entities/episode.entity.ts": [
-        "../src/podcast/entities/core.entity.ts",
+        "../src/common/entities/core.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
       ],
       "../src/podcast/entities/podcast.entity.ts": [
-        "../src/podcast/entities/core.entity.ts",
+        "../src/common/entities/core.entity.ts",
         "../src/podcast/entities/episode.entity.ts"
       ],
       "../src/podcast/podcasts.resolver.ts": [
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/dtos/create-episode.dto.ts",
         "../src/podcast/dtos/create-podcast.dto.ts",
-        "../src/podcast/dtos/output.dto.ts",
         "../src/podcast/dtos/podcast.dto.ts",
         "../src/podcast/dtos/update-episode.dto.ts",
         "../src/podcast/dtos/update-podcast.dto.ts",
@@ -15644,14 +15730,39 @@
       ],
       "../src/podcast/podcasts.service.ts": [
         "../node_modules/typeorm/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
         "../src/podcast/dtos/create-episode.dto.ts",
         "../src/podcast/dtos/create-podcast.dto.ts",
-        "../src/podcast/dtos/output.dto.ts",
         "../src/podcast/dtos/podcast.dto.ts",
         "../src/podcast/dtos/update-episode.dto.ts",
         "../src/podcast/dtos/update-podcast.dto.ts",
         "../src/podcast/entities/episode.entity.ts",
         "../src/podcast/entities/podcast.entity.ts"
+      ],
+      "../src/users/dtos/create-user.dto.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
+      "../src/users/dtos/user.dto.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/entities/user.entity.ts"
+      ],
+      "../src/users/entities/user.entity.ts": [
+        "../src/common/entities/core.entity.ts"
+      ],
+      "../src/users/user.resolver.ts": [
+        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/user.dto.ts",
+        "../src/users/user.service.ts"
+      ],
+      "../src/users/user.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/common/dtos/output.dto.ts",
+        "../src/users/dtos/create-user.dto.ts",
+        "../src/users/dtos/user.dto.ts",
+        "../src/users/entities/user.entity.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -16844,19 +16955,27 @@
       "../src/app.controller.ts",
       "../src/app.module.ts",
       "../src/app.service.ts",
+      "../src/common/common.module.ts",
+      "../src/common/const.ts",
+      "../src/common/dtos/output.dto.ts",
+      "../src/common/entities/core.entity.ts",
       "../src/main.ts",
       "../src/podcast/dtos/create-episode.dto.ts",
       "../src/podcast/dtos/create-podcast.dto.ts",
-      "../src/podcast/dtos/output.dto.ts",
       "../src/podcast/dtos/podcast.dto.ts",
       "../src/podcast/dtos/update-episode.dto.ts",
       "../src/podcast/dtos/update-podcast.dto.ts",
-      "../src/podcast/entities/core.entity.ts",
       "../src/podcast/entities/episode.entity.ts",
       "../src/podcast/entities/podcast.entity.ts",
       "../src/podcast/podcasts.module.ts",
       "../src/podcast/podcasts.resolver.ts",
-      "../src/podcast/podcasts.service.ts"
+      "../src/podcast/podcasts.service.ts",
+      "../src/users/dtos/create-user.dto.ts",
+      "../src/users/dtos/user.dto.ts",
+      "../src/users/entities/user.entity.ts",
+      "../src/users/user.module.ts",
+      "../src/users/user.resolver.ts",
+      "../src/users/user.service.ts"
     ]
   },
   "version": "4.0.5"

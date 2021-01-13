@@ -5,7 +5,7 @@ import { CoreOutput } from '../../common/dtos/output.dto';
 @InputType()
 export class CreatePodcastInput extends PickType(
   Podcast,
-  ['title', 'category'],
+  ['title', 'category', 'rating'],
   InputType,
 ) {}
 

@@ -14,7 +14,7 @@ const episode_entity_1 = require("./episode.entity");
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
 const typeorm_1 = require("typeorm");
-const core_entity_1 = require("./core.entity");
+const core_entity_1 = require("../../common/entities/core.entity");
 let Podcast = class Podcast extends core_entity_1.CoreEntity {
 };
 __decorate([

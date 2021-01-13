@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GetEpisodeOutput = exports.EpisodesSearchInput = exports.EpisodesOutput = exports.PodcastOutput = exports.PodcastSearchInput = exports.GetAllPodcastsOutput = void 0;
 const graphql_1 = require("@nestjs/graphql");
-const output_dto_1 = require("./output.dto");
+const output_dto_1 = require("../../common/dtos/output.dto");
 const podcast_entity_1 = require("../entities/podcast.entity");
 const class_validator_1 = require("class-validator");
 let GetAllPodcastsOutput = class GetAllPodcastsOutput extends output_dto_1.CoreOutput {

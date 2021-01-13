@@ -13,7 +13,7 @@ exports.CreateEpisodeOutput = exports.CreateEpisodeInput = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
 const episode_entity_1 = require("../entities/episode.entity");
-const output_dto_1 = require("./output.dto");
+const output_dto_1 = require("../../common/dtos/output.dto");
 let CreateEpisodeInput = class CreateEpisodeInput extends graphql_1.PickType(episode_entity_1.Episode, ['title', 'category'], graphql_1.InputType) {
 };
 __decorate([

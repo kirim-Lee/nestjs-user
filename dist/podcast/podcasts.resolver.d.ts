@@ -1,6 +1,6 @@
 import { PodcastsService } from './podcasts.service';
 import { CreatePodcastInput, CreatePodcastOutput } from './dtos/create-podcast.dto';
-import { CoreOutput } from './dtos/output.dto';
+import { CoreOutput } from '../common/dtos/output.dto';
 import { PodcastSearchInput, PodcastOutput, EpisodesOutput, EpisodesSearchInput, GetAllPodcastsOutput } from './dtos/podcast.dto';
 import { UpdatePodcastInput } from './dtos/update-podcast.dto';
 import { CreateEpisodeInput, CreateEpisodeOutput } from './dtos/create-episode.dto';
